@@ -5,7 +5,19 @@ public class vezerlo {
         int eredmeny;
 
         eredmeny = osszegzesTetele(tomb);
+        eredmeny = megszamlalasTetele(tomb);
 
+    }
+
+    private int megszamlalasTetele(int[] tomb) {
+        int vissza = 0;
+        for (int Item : tomb) {
+            if (Item > 5) {
+                vissza++;
+            }
+        }
+
+        return vissza;
     }
 
     private int osszegzesTetele(int[] tomb) {
